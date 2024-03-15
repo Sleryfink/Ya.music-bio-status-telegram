@@ -19,6 +19,10 @@
    stock_bio`
 4. Run
 
+## 📃 License
+
+This project is licensed under the [GNU General Public License v3.0](https://github.com/SFmindMAP/Ya.music-bio-status-telegram/blob/main/LICENSE).
+
 ## 📕 Contacts
 If you have any suggestions or ideas, feel free to reach out:
 
