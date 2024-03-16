@@ -12,7 +12,7 @@
 1. Download `main.py` from this repo
 2. Install dependencies with `pip install telethon yandex-music`
 3. Get [Yandex-music token](https://yandex-music.readthedocs.io/en/main/token.html)
-4. open [my.telegram.org](my.telegram.org), login and create new app
+4. open <a href="https://my.telegram.org">my.telegram.org</a>, login and create new app
 5. Copy and paste your data into the variables:
 `api_id
    api_hash
