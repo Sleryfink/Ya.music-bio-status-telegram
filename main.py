@@ -58,7 +58,7 @@ async def main():
                     await client_tele(telethon.tl.functions.account.UpdateProfileRequest(
                         about=f"{stock_bio}"
                     ))
-    except IndexError or telethon.errors.AboutTooLongError:
+    except (IndexError, telethon.errors.AboutTooLongError):
         if wave:
             pass
         else:
