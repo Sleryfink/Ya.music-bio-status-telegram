@@ -3,6 +3,7 @@ import time
 import telethon
 from telethon.sync import TelegramClient
 from yandex_music import Client
+from yandex_music.exceptions import NetworkError
 
 # сюда вся инфа ###
 api_id = ''
@@ -86,6 +87,11 @@ while True:
     print(inte)
     inte = inte + 1
     if check_internet():
-        with client_tele:
-            client_tele.loop.run_until_complete(main())
+        try:
+            with client_tele:
+                client_tele.loop.run_until_complete(main())
+        except NetworkError:
+            print('Произошла ошибка сети. Перезапуск через 30 секунд...')
+            time.sleep(30)
+            continue
     time.sleep(10)
