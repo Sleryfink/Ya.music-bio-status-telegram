@@ -51,7 +51,7 @@ async def main():
                     about_text = f"{stock_bio} | listening: {title} - {artists}"
                 await client_tele(telethon.tl.functions.account.UpdateProfileRequest(about=about_text))
         else:
-            if count < 30:
+            if count < 10:
                 count += 1
             else:
                 count = 0
@@ -94,4 +94,4 @@ while True:
             print('Произошла ошибка сети. Перезапуск через 30 секунд...')
             time.sleep(30)
             continue
-    time.sleep(10)
+    time.sleep(30)
