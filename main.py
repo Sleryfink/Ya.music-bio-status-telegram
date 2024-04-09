@@ -73,7 +73,7 @@ inte = 0
 
 # чекер соединения
 def check_internet():
-    url = 'http://www.google.com/'
+    url = 'http://www.ya.ru/'
     timeout = 5
     try:
         _ = requests.get(url, timeout=timeout)
